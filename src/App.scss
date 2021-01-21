@@ -1,10 +1,53 @@
-@import '../node_modules/@carbon/themes/scss/themes.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
+@import 'carbon-components/scss/globals/scss/typography.scss';
+@import 'carbon-components/scss/globals/scss/vars.scss';
+@import '@carbon/themes/scss/themes';
+
+@import '@carbon/type/scss/type';
+@import '@carbon/type/scss/font-face/mono';
+@import '@carbon/type/scss/font-face/sans';
+@include carbon--type-reset();
+@include carbon--font-face-mono();
+@include carbon--font-face-sans();
+@import 'carbon-components/scss/globals/grid/grid';
 
 
-// Use the gray 90 theme
-$carbon--theme: $carbon--theme--g90;
-@include carbon--theme();
+.App {
+    text-align: center;
+}
 
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
 
-// import Carbon styles here
-@import '../node_modules/carbon-components/scss/globals/scss/styles.scss';
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

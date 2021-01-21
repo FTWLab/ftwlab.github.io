@@ -1,19 +1,13 @@
 import './App.scss';
-import Header from './component/Header';
-import { Component } from 'react';
-import StartupStudio from './component/StartupStudio';
-import Heading from './component/Heading';
+import './assets/scss/_custom.scss';
+import './assets/scss/_responsive.scss';
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <Header />
-                <Heading />
-                <StartupStudio />
-            </div>
-        );
-    };
+import Routes from "./routes/Routes";
+
+function App() {
+    return (
+	    <Routes />
+    );
 }
 
 export default App;

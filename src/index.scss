@@ -1,10 +1,19 @@
-@import '../node_modules/@carbon/themes/scss/themes.scss';
+@import 'carbon-components/scss/globals/scss/styles.scss';
 
-// Use the gray 90 theme
-$carbon--theme: $carbon--theme--g90;
-@include carbon--theme();
+$feature-flags: (
+  	grid-columns-16: true,
+);
 
-// import Carbon styles here
-@import '../node_modules/carbon-components/scss/globals/scss/styles.scss';
+body {
+  	margin: 0;
+  	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+code {
+  	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
