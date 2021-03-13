@@ -25,7 +25,7 @@ class Routes extends Component {
 		                path="/legal"
 		            />
 		            <LightHeaderRoutes
-		                component={ NotFound }
+						component={ NotFound }
 		                exact
 		                path="/not-found"
 		            />
