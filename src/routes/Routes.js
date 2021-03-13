@@ -15,19 +15,16 @@ class Routes extends Component {
 	    	<Router>
 		    	<Switch>
 		    		<DarkHeaderRoutes
-						basename={ process.env.PUBLIC_URL }
 		                component={ Landing }
 		                exact
 		                path="/"
 		            />
 		            <LightHeaderRoutes
-						basename={ process.env.PUBLIC_URL }
 		                component={ Legal }
 		                exact
 		                path="/legal"
 		            />
 		            <LightHeaderRoutes
-		                basename={ process.env.PUBLIC_URL }
 						component={ NotFound }
 		                exact
 		                path="/not-found"
