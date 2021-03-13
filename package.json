@@ -30,7 +30,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "copy": "cp ./build/index.html ./build/legal.html",
+    "predeploy": "npm run build && npm run copy",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
